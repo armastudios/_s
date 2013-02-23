@@ -12,20 +12,31 @@
  */
 
 get_header(); ?>
-
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
+				<div class="spacer" style="clear: both;"></div>
+				<div id="pagebody">							
+					
 
-				<?php while ( have_posts() ) : the_post(); ?>
+					<div id="pagebodyinner" class="effect7" >
+								
 
-					<?php get_template_part( 'content', 'page' ); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+						
+						<div id="maincontent"><?php get_template_part( 'content', 'page' ); ?></div>
+						<div id="mainsidebar"><?php get_sidebar(); ?></div>
 
-					<?php comments_template( '', true ); ?>
 
-				<?php endwhile; // end of the loop. ?>
-
+				
+							<?php // comments_template( '', true ); ?>
+							<div class="spacer" style="clear: both;"></div>
+						<?php endwhile; // end of the loop. ?>
+					</div>test
+				
+				</div>
+				
 			</div><!-- #content .site-content -->
+		
 		</div><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
