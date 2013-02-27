@@ -154,3 +154,20 @@ add_action( 'wp_enqueue_scripts', '_s_scripts' );
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
+
+function register_my_menus() {
+	register_nav_menus(
+	array(
+	'sidebar-nav' => __( 'Sidebar Navigation' ),
+	'middlebox1' => __( 'Middle Box 1' ),
+	'middlebox2' => __( 'Middle Box 2' ),
+	'middlebox3' => __( 'Middle Box 3' ),
+	'middlebox4' => __( 'Middle Box 4' ),
+	'footerbox1' => __( 'Footer Box 1' ),
+	'footerbox2' => __( 'Footer Box 2' ),
+	'footerbox3' => __( 'Footer Box 3' ),
+	'footerbox4' => __( 'Footer Box 4' ),
+	)
+	);
+	}
+	add_action( 'init', 'register_my_menus' );

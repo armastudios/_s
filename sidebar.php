@@ -13,7 +13,12 @@
 				<aside id="search" class="widget widget_search">
 					<?php get_search_form(); ?>
 				</aside>
+		
 
+					
+			
+
+		
 				<aside id="archives" class="widget">
 					<h1 class="widget-title"><?php _e( 'Archives', '_s' ); ?></h1>
 					<ul>
@@ -32,3 +37,6 @@
 
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->
+		
+		<h1>Navigation</h1>
+		<?php wp_nav_menu( array( 'theme_location' => 'sidebar-nav' ) ); ?>

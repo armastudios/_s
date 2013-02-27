@@ -31,7 +31,7 @@ get_header(); ?>
 							<?php // comments_template( '', true ); ?>
 							<div class="spacer" style="clear: both;"></div>
 						<?php endwhile; // end of the loop. ?>
-					</div>test
+					</div>
 				
 				</div>
 				
