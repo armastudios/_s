@@ -304,7 +304,7 @@ h3 {
 	width: 100%;
 	xmargin:0px auto;
 	height: 100%;
-	padding-top: 510px;
+	padding-top: 520px;
 	xbackground-color: #eeece0;
 	z-index: 5;
 }
@@ -870,8 +870,9 @@ a:hover, a:focus, a:active {
 .topmenu {
 	float:right;
 	width: 125px;
-	margin:105px auto;
-	padding: 0 0px 0 0px;
+	xmargin:105px auto;
+	margin: 105px 5px 0 5px;
+	xpadding: 0 5px 0 5px;
 	text-align: center;
 	vertical-align:text-bottom;
 }
@@ -889,7 +890,7 @@ a:hover, a:focus, a:active {
 	display: block;
 	margin: 0px auto;
 	width: 100%;
-	height: 160px;
+	height: 172px;
 	z-index:19;
 	background-image:url('images/bgdiag.jpg');
 	border-bottom: 3px solid #c8c5b4;
@@ -897,14 +898,24 @@ a:hover, a:focus, a:active {
 	-moz-box-shadow:    0px 4px 22px rgba(50, 50, 50, 0.54);
 	box-shadow:         0px 4px 22px rgba(50, 50, 50, 0.54);
 }
-#logo-container {
+#green-container {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 15px;
-	margin:0px auto;
+	height: 25px;
+	padding-top: 2px;
 	z-index: 30;
+	font-size: 15px;
 	background-image:url('images/bgtop.png');
+}
+#green {
+	width: 1000px;
+	margin:0px auto;
+	padding-right: 25px;
+	text-align: right;
+}
+#green a {
+	color: #f4f2e8;
 }
 #info-container {
 	position: relative;
@@ -928,7 +939,7 @@ a:hover, a:focus, a:active {
 	display: block;
 	float: left;
 	margin-top: 5px;
-	margin-left: -45px;
+	margin-left: -25px;
 }
 #info {
 	position: relative;
@@ -947,6 +958,7 @@ a:hover, a:focus, a:active {
 	height: 100%;
 	float:right;
 	margin:0px auto;
+	xbackground-color: pink;
 }
 .main-navigation {
 	color: #383B3F;	
@@ -992,11 +1004,15 @@ a:hover, a:focus, a:active {
 }
 
 .nav-lecarignan, .nav-lecarignan ul ul {
-	width: 125px;
+	width: 155px;
 }
 
-.nav-events, .nav-events ul ul{
-	width: 190px;
+.nav-gallery, .nav-gallery ul ul {
+	width 100px;
+}
+
+.nav-events, .nav-events ul ul {
+	width: 250px;
 }
 
 .nav-contact, .nav-contact ul ul {

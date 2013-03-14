@@ -36,9 +36,16 @@
 			<div id="headergroup">
 				<div id="navwrapper">
 					
-					<div id="logo-container">	
-
+					<div id="green-container">
+						<div id="green">
+							<?php if(qtrans_getLanguage()=='en'): ?>
+								<a href="http://cgolf.armanet.ca/?lang=fr">Français</a>
+							<?php endif; ?>
+							<?php if(qtrans_getLanguage()=='fr'): ?>
+								<a href="http://cgolf.armanet.ca/?lang=en">English</a>
+							<?php endif; ?>
 						</div>
+					</div>
 					
 
 						<div id="nav-container" class="711">

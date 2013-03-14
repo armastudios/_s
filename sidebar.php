@@ -9,23 +9,22 @@
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+					<h1>Navigation</h1>
+					<?php wp_nav_menu( array( 'theme_location' => 'sidebar-nav' ) ); ?>
 
-				<aside id="search" class="widget widget_search">
-					<?php get_search_form(); ?>
-				</aside>
-		
-
-					
+				<!--
+					<aside id="search" class="widget widget_search">
+						<?php get_search_form(); ?>
+					</aside>
 			
-
-		
-				<aside id="archives" class="widget">
-					<h1 class="widget-title"><?php _e( 'Archives', '_s' ); ?></h1>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-					</ul>
-				</aside>
-
+					<aside id="archives" class="widget">
+						<h1 class="widget-title"><?php _e( 'Archives', '_s' ); ?></h1>
+						<ul>
+							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+						</ul>
+					</aside>
+				
+				
 				<aside id="meta" class="widget">
 					<h1 class="widget-title"><?php _e( 'Meta', '_s' ); ?></h1>
 					<ul>
@@ -33,10 +32,8 @@
 						<li><?php wp_loginout(); ?></li>
 						<?php wp_meta(); ?>
 					</ul>
-				</aside>
-
+				</aside>				
+				-->
+				
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->
-		
-		<h1>Navigation</h1>
-		<?php wp_nav_menu( array( 'theme_location' => 'sidebar-nav' ) ); ?>
