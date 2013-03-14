@@ -159,6 +159,10 @@ function register_my_menus() {
 	register_nav_menus(
 	array(
 	'sidebar-nav' => __( 'Sidebar Navigation' ),
+	'topnav1' => __( 'Top Nav 1' ),
+	'topnav2' => __( 'Top Nav 2' ),
+	'topnav3' => __( 'Top Nav 3' ),
+	'topnav4' => __( 'Top Nav 4' ),
 	'middlebox1' => __( 'Middle Box 1' ),
 	'middlebox2' => __( 'Middle Box 2' ),
 	'middlebox3' => __( 'Middle Box 3' ),
