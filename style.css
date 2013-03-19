@@ -157,11 +157,27 @@ body, button, input, select, textarea {
 	position: relative;
 	display: block;
 	width: 650px;
-	padding-top: 25px;
-	padding-right: 25px;
-	padding-left: 25px;
+	padding: 50px 25px 25px 25px;
 	float: left;
+}
 
+#maincontent-gallery {
+	position: relative;
+	display: block;
+	width: 950px;
+	margin: 0px auto;
+	padding: 50px 25px 25px 25px;
+	float: left;
+}
+
+#maincontent-gallery-wrap {
+	position: relative;
+	display: block;
+	height: 600px;
+	width: 998px;
+	margin: 0px auto;
+	margin-top: -350px;
+	margin-bottom: 200px;
 }
 
 #mainsidebar {
@@ -183,7 +199,7 @@ body, button, input, select, textarea {
 
 #mainsidebar ul {
 	list-style: none;
-		margin-left: 0px;
+	margin-left: 0px;
 	padding: 0px 0 10px 0px;
 }
 
@@ -208,16 +224,26 @@ body, button, input, select, textarea {
 
 #footer-area {
 	display: block;
-	width: 800px;
+	width: 825px;
 	margin:0px auto;
 	height: 250px;
 	padding-top: 80px;
+	xbackground-color: pink;
+}
+
+#footer-area-gallery {
+	display: block;
+	width: 825px;
+	margin: 0px auto;
+	height: 150px;
+	padding-top: 30px;
+	xbackground-color: pink;
 }
 
 #footer-copyright{
 	margin: 10px 0 0 0px;
 	padding: 5px 0 0 0px;
-	width: 800px;
+	width: 825px;
 	border-top: 1px solid #a19c8d;
 	z-index: -101;
 }
@@ -227,9 +253,10 @@ body, button, input, select, textarea {
 	position: relative;
 	width: 220px;
 	height: 200px;
-	padding: 0px 0px 0px 55px;
-	float:left;
+	padding: 0px 0px 0px 0px;
+	float:right;
 	margin:0px auto;
+	xbackground-color: red;
 }
 
 .widget_search{
@@ -253,29 +280,32 @@ input#s {
 
 .footerbox {
 	display: inline-block;
-	height: 200px;
+	height: 225px;
 	width: 130px;
 	margin:0px auto;
 	float: left;
 	line-height: 1.8em;
+	padding: 0 10px 0 10px;
+}
+
+.footerbox h2 {
+	font-weight: bold;
+	font-size: 13px;
 }
 
 .footerbox ul li {
 	list-style: none;
-	margin-left: -40px;
+	margin-left: -45px;
 	font-size: 13px;
 	color: black;
 }
-
 .footerbox ul {
 	font-size: 15px;
 }
-
 .footerbox a {
 	text-decoration: none;
 	color: #161616;
 }
-
 .footerbox a:link {
 	text-decoration: none;
 	color: #161616;
@@ -309,12 +339,24 @@ h3 {
 	z-index: 5;
 }
 
+#pagebody-gallery {
+	position:relative;
+	display:block;
+	width: 100%;
+	height: 100%;
+	padding-top: 520px;
+	z-index: 5;
+	background-image:url('images/bgboxphoto-gallery.jpg');
+}
+
 #crumbtrail-container {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: 40px;
-	xbackground-color: pink;
+	padding-top: 15px;
+	padding-left: 10px;
+	xz-index: 1;
 }
 
 #crumbtrail {
@@ -324,11 +366,9 @@ h3 {
 	height: 30px;
 	margin: -5px auto;
 	z-index: 50;
-	border-top: 5px solid #e1dcce;	
 	color: #383B3F;
 	font-size: 15px;
 	padding: 5px 15px 5px 15px;
-	xbackground-color: blue;
 }
 
 #pagebodyinner {
@@ -367,7 +407,6 @@ h3 {
 #headerboxes a {
 	color: black;
 	text-decoration: none;
-	
 }
 #headerboxes a:hover {
 	color: gray;
@@ -375,7 +414,6 @@ h3 {
 #headerboxes a:visited {
 	color: ;
 }
-
 #headerboxes ul li {
 }
 
@@ -384,20 +422,15 @@ h3 {
 	hidden: visible;
 	z-index: 10;
 }
-
 #headerboxes h1 {
 	font-size: 20px;
 }
-
-
 #headerboxes ul {
 	margin-left: 25px;
 }
-
 #headerboxes li {
 	font-size: 13px;
 }
-
 #boxphoto {
 	position:relative;
 	display: block;
@@ -406,8 +439,6 @@ h3 {
 	z-index: 10;
 	margin: 0px auto;
 }
-
-
 #boxphoto img {
 	position: relative;
 	display: block;
@@ -489,38 +520,77 @@ h3 {
 
 
 /* Pricelist Table formatting */
+#pricelist-center {
+	text-align:center;
+}
 
+#pricelist-wrap {
+	position: relative;
+	margin: 0px auto;
+}
+
+#pricelist-wrap-center {
+	display: table;
+	margin: 0px auto;
+}
 
 #pricelist {
 	*border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0; 
-    width: 90%;
-
+    xwidth: 100%;
+    background-color: #9abb7f;
+	xborder: 1px solid #000;
+	
     /* Rounded Corners */
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -khtml-border-radius: 10px;
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
 	
-	
-	background: #f5f5f5;
 	padding: 10px;
+	
+	margin: 0px 0 50px 0px;
+	padding-bottom: 15px;
 	
 	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
 	font-size: 15pt;
 }
 
-#pricelist thead:hover {
-		background: #9abb7f;
+.width-200 {
+	width: 200px;
+}
+
+.width-400 {
+	width: 400px;
+}
+
+#pricelist th {
+	height: 50px;
+	text-align: center;
+}
+
+#pricelist th:hover {
+	background: #9abb7f;
 }
 
 #pricelist th:first-child {
 	font-weight: bold;
 	font-size: 25px;
+	background: #9abb7f;
 }
 
 #pricelist th:last-child {
 	font-weight: bold;
+	background: #9abb7f;
+}
+
+#pricelist td:first-child {
+	text-align: left;
+	padding-left: 15px;
+}
+
+#pricelist td {
+	text-align:center;
 }
 
 #pricelist tfoot td {
@@ -535,7 +605,7 @@ h3 {
 }
 
 #pricelist tr:hover {
-	background: #9abb7f;
+	background: #bcd1ab;
 	font-style: bold;
 	-o-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;

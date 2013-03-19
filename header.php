@@ -24,6 +24,20 @@
 <script type="text/javascript" src="//use.typekit.net/rxw5nhq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+<?php
+	$pageid = $_GET['page_id'];
+
+	if($pageid == 102 || $pageid == 40) {
+		// Restaurant slideshow
+		$headerid = 497;
+	} if($pageid == 427) {
+		$headerid = 648;
+	} else {
+		// Default slideshow
+		$headerid = 44;
+	}
+?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -38,12 +52,16 @@
 					
 					<div id="green-container">
 						<div id="green">
+						<?php echo qtrans_generateLanguageSelectCode('dropdown'); ?>
+							
+							<!--
 							<?php if(qtrans_getLanguage()=='en'): ?>
 								<a href="http://cgolf.armanet.ca/?lang=fr">Français</a>
 							<?php endif; ?>
 							<?php if(qtrans_getLanguage()=='fr'): ?>
 								<a href="http://cgolf.armanet.ca/?lang=en">English</a>
 							<?php endif; ?>
+							-->
 						</div>
 					</div>
 					
@@ -80,14 +98,18 @@
 								</nav><!-- .site-navigation .main-navigation -->
 							</div>
 						</div>
-					</div>
-							
-				
-					<div id="boxphotobg" >
-						<div id="boxphoto" class="effect711">	
-							<?php do_action('slideshow_deploy', '44'); ?>			  		
-						</div> 
-					</div>
+					</div>			
+						<?php 
+							if ($headerid == 648) {
+								
+						} else { ?>
+							<div id="boxphotobg" >
+								<div id="boxphoto" class="effect711">	
+									<?php do_action('slideshow_deploy', $headerid); ?>										  		
+								</div> 
+							</div>
+						<?php } ?>
+										
 	<div id="crumbtrail-container">
 		<div id="crumbtrail">
 			<?php if ( function_exists('yoast_breadcrumb') ) {
